@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jada Castaneda - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Jada Castaneda</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog Directory</a>
+        <a href="certifications.html">Certifications</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Blog</h2>
+    <p>Welcome to my blog! Here are some of my latest posts. Just click on the titles to view them:</p>
+    <button type="button" class="collapsible"><b>AI: Is It a Bad Thing?</b></button>
+    <div class="content">
+        <p>AI is constantly learning and evolving which means that it's always getting input from others. We need to find a way to control AI so it doesn't make people become scared like how science fiction depicts AI and robots taking over the world. In the end, I don't think that AI is something we should be afraid of because technology is constantly evolving which means that we might reach a point in time where AI has been perfected</p>
+    </div>
+    <button type="button" class="collapsible"><b>Advancing Technology</b></button>
+    <div class="content">
+    <p>As technology advances, so does our ability to complete tasks. In the last few years, we've managed to make computers so compact that they were placed inside a watch, virtual worlds that bring hyper realistic experiences to humans, and improving medicine thus increasing lifespans. While all of this is good, there are also downsides to technology getting better. Humans are becoming more addicted to using technology made for consumers like laptops, tablets, and phones. Also, there is a problem where computers might take over the jobs that people in society currently do like packaging, deliveries, taking food orders, and much more which could leave many without employment in the future. There isn't a definite answer as to whether or not technology is good but technology is improving the way we do everything on a daily basis</p>
+    </div>
+    <button type="button" class="collapsible"><b>Hardware VS Software</b></button>
+    <div class="content">
+        <p><b><u>SIMILARITIES</b></u></p>
+        <ul>
+            <li>Hardware and software both require logic</li>
+            <li>Both hardware and software produce outputs when given an input</li>
+            <li>Hardware and software are both very complex</li>
+        </ul>
+        <p><b><u>DIFFERENCES</b></u></p>
+        <ul>
+        <li>It's easier and less expensive to change software when compared to hardware</li>
+        <li>Software can add more features while hardware requires for components to be added or replaced to add new capabilities</li>
+        <li>Hardware is made specifically for one device while some software has to be adapted to run on multiple devices</li>
+        </ul>
+    </div>
+    <button type="button" class="collapsible"><b>Is Computer Science easy?</b> - WORK IN PROGRESS</button>
+    <div class="content">
+        <p>I'd say that Computer Science is easy. Right now, I'm actually coding. As you may or may not know, I have a bit of HTML and CSS knowledge. With that knowledge, I have been able to code websites instead of using website builders (It's ok Google. I still like your website builder and Blogger). I also made a lot of projects in Python but I'm working on getting more Java experience since I'm doing the UIL and BPA competitions that focus on Java and only Java. I used to be highly proficient in Java 2 years ago but I stopped learning more and I need to work on getting better at it. Luckily, I have been working on Java in my Practicum of Computer Science class and I'm finding it to be really easy. </p>
+    </div>
+    </section>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+</script>
+
+<footer>
+    <p>&copy; 2024 Jada Castaneda. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

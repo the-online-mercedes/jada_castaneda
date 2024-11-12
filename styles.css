@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background for contrast */
+    background-image: url('https://res.cloudinary.com/gimmersta-wallpaper/image/upload/c_fill,f_auto,fl_progressive,q_auto,h_1200/v1638282896/articles/R10181_product.jpg'); /* Set the background image */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #004d00 0%, #006600 100%); /* Dark green gradient */
+    color: #ffffff; /* White text for contrast */
+    padding: 30px 0; /* Increased padding for a bolder header */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
+}
+/* Specific Styles for h1 within the Header */
+header h1 {
+    font-size: 3em; /* Larger font size for main heading */
+    margin-bottom: 15px; /* Spacing below heading */
+    color: #000000; /* Change to black for the h1 in the header */
+    text-shadow: none; /* Remove text shadow if not needed */
+}
+
+/* Navigation Styles */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+nav a:hover {
+    color: #d9ffd9; /* Lighter green on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px; /* Increased padding for better spacing */
+    background: #ffffff; /* White background for content */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* More pronounced rounded corners */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0; /* Increased padding for footer */
+    background: linear-gradient(135deg, #004d00 0%, #006600 100%); /* Dark green gradient */
+    color: #ffffff; /* White text for contrast */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
+}
+/* Specific Styles for paragraphs within the Footer */
+footer p {
+    color: #000000; /* Change to black for paragraphs in the footer */
+    margin: 0; /* Optional: Remove margin if you want to adjust spacing */
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: #004d00; /* Dark green for headings */
+}
+
+h1 {
+    font-size: 3em; /* Larger font size for main heading */
+    margin-bottom: 15px; /* Spacing below heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+h2 {
+    font-size: 2.5em; /* Slightly larger subheading */
+    margin-bottom: 20px; /* Spacing below subheading */
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 20px; /* Spacing between paragraphs */
+    color: #333; /* Darker text color for better readability */
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 12px 25px; /* Increased padding for buttons */
+    background-color: #006600; /* Dark green button */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+.button:hover {
+    background-color: #005700; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Full width on smaller screens */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links */
+    }
+
+    nav a {
+        margin: 10px 0; /* Spacing between links */
+    }
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
